@@ -456,7 +456,7 @@ h2 {
   font-weight: 400;
 }
 
-.in_the_kitchen button {
+.in_the_kitchen a {
   align-self: flex-start;
   margin-top: auto;
   margin-bottom: 65px ;
@@ -469,7 +469,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.in_the_kitchen button:hover {
+.in_the_kitchen a:hover {
   padding: 11px 60px;
   font-size: 17px;
 }
