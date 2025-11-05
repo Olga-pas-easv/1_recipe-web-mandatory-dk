@@ -416,8 +416,8 @@ h2 {
 
 .in_the_kitchen article {
   display: flex;
-    align-items: stretch;
-    min-height: 360px;
+  align-items: stretch;
+  min-height: 360px;
 }
 
 .in_the_kitchen-text {
@@ -432,7 +432,6 @@ h2 {
   width: 50%;
   position: relative;
 }
-
 
 .in_the_kitchen h3 {
   color: var(--primary-color);
@@ -459,7 +458,7 @@ h2 {
 .in_the_kitchen a {
   align-self: flex-start;
   margin-top: auto;
-  margin-bottom: 65px ;
+  margin-bottom: 65px;
   background-color: var(--color-dark);
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 5px;
@@ -467,6 +466,7 @@ h2 {
   color: var(--bachground-color-light);
   font-size: 16px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .in_the_kitchen a:hover {
@@ -476,10 +476,93 @@ h2 {
 
 /* FOOTER */
 
-footer {
+.footer {
   background-color: var(--primary-color);
+  width: var(--width-full);
 }
 
-footer a {
+.footer-container {
+  display: flex;
+  width: var(--width-12col);
+  padding: 40px 0;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.footer-container-left {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid var(--color-white);
+  gap: 10px;
+  align-items: stretch;
+}
+
+.footer-container-left a {
+  color: var(--color-dark);
+  font-size: 13px;
+  text-transform: capitalize;
   text-decoration: none;
+}
+
+.footer-container-left a:hover {
+  font-size: 14px;
+  color: var(--color-grey);
+}
+
+.footer-media {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.footer-media-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-navigation {
+  width: 50%;
+  height: auto;
+  display: flex;
+}
+
+.footer-navigation ul {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container-right {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  color: var(--color-dark);
+  padding-left: 40px;
+}
+
+.footer-container-right a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer-container-right-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 17px;
+}
+
+.footer-container-right-text img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
