@@ -227,35 +227,29 @@ h2 {
   margin: 0 auto;
 }
 
-.todays_recipes-container {
-  height: fit-content;
+.todays_recipes-container-block {
   display: grid;
-  grid-template-columns: 1fr;
-   gap: var(--grid-gap);
-   margin: 28px auto;
+  column-gap: var(--grid-gap);
+  width: var(--width-12col);
+  grid-template-columns: repeat(4, 1fr);
+  height: fit-content;
+  margin: 28px 0 0 0;
 }
 
-.todays_recipes-container-block {
-    display: grid;
-      gap: var(--grid-gap);
-      width: var(--width-12col);
-      grid-template-columns: repeat(4, 1fr);
-      height: fit-content;
-} 
-
 .todays_recipes-listing {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
   background-color: var(--bachground-color-light);
+  grid-template-rows: auto 1fr;
   color: var(--color-dark);
   border-radius: 5px;
 }
 
-
-.todays_recipes-listing-img {
-  min-height: 170px;
+.todays_recipes-listing-img img {
+  border-radius: 5px 5px 0 0;
+  height: 170px;
+  width: 100%;
+  background-size: auto;
+  background-position: center;
 }
 
 .todays_recipes-listing-text {
@@ -274,52 +268,94 @@ h2 {
 .todays_recipes-listing-text p {
   text-transform: capitalize;
   margin-bottom: 27px;
+  font-size: 16px;
 }
 
-.todays_recipes-listing-text h5 {
+.todays_recipes-listing-text-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todays_recipes_categoty {
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* .todays_recipes-listing-text-bottom {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column: repeat (4/1fr);
-} */
+.todays_recipes_categoty_block[data-category='seafood'] {
+  border-left: 1px solid var(--category-seafood);
+  padding: 0 0 0 10px;
+  height: min-content;
+}
+
+.todays_recipes_categoty_block[data-category='chicken'] {
+  border-left: 1px solid var(--category-chicken);
+  padding: 0 0 0 10px;
+  height: min-content;
+}
+
+.todays_recipes_categoty_block[data-category='dessert'] {
+  border-left: 1px solid var(--category-dessert);
+  padding: 0 0 0 10px;
+  height: min-content;
+}
+
+.todays_recipes_categoty_block[data-category='meats'] {
+  border-left: 1px solid var(--category-meats);
+  padding: 0 0 0 10px;
+  height: min-content;
+}
+
+.todays_recipes_categoty_block[data-category='veg'] {
+  border-left: 1px solid var(--category-veg);
+  padding: 0 0 0 10px;
+  height: min-content;
+}
+
+.todays_recipes_categoty_block[data-category='paste'] {
+  border-left: 1px solid var(--category-paste);
+  padding: 0 0 0 10px;
+  height: min-content;
+}
+
+.todays_recipes_categoty_block[data-category='misc'] {
+  border-left: 1px solid var(--category-misc);
+  padding: 0 0 0 10px;
+  height: min-content;
+}
 
 /* Category color in Today’s recipes*/
-.listing h5 span[data-category='seafood'] {
+.todays_recipes_categoty span[data-category='seafood'] {
   font-weight: 400;
   color: var(--category-seafood);
 }
 
-.listing h5 span[data-category='chicken'] {
+.todays_recipes_categoty span[data-category='chicken'] {
   font-weight: 400;
   color: var(--category-chicken);
 }
 
-.listing h5 span[data-category='dessert'] {
+.todays_recipes_categoty span[data-category='dessert'] {
   font-weight: 400;
   color: var(--category-dessert);
 }
 
-.listing h5 span[data-category='meats'] {
+.todays_recipes_categoty span[data-category='meats'] {
   font-weight: 400;
   color: var(--category-meats);
 }
 
-.listing h5 span[data-category='veg'] {
+.todays_recipes_categoty span[data-category='veg'] {
   font-weight: 400;
   color: var(--category-veg);
 }
 
-.listing h5 span[data-category='paste'] {
+.todays_recipes_categoty span[data-category='paste'] {
   font-weight: 400;
   color: var(--category-paste);
 }
 
-.listing h5 span[data-category='misc'] {
+.todays_recipes_categoty span[data-category='misc'] {
   font-weight: 400;
   color: var(--category-misc);
 }
@@ -514,7 +550,6 @@ h2 {
   padding: 11px 60px;
   font-size: 17px;
 }
-
 
 /* FOOTER */
 
