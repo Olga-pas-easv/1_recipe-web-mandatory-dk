@@ -59,20 +59,6 @@ p {
 /* По дефолту есть маржины для этих элементов */
 
 /* All Buttons */
-.button {
-  background-color: var(--color-dark);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 5px;
-  padding: 6px 23px;
-  color: var(--bachground-color-light);
-  font-size: 11px;
-  text-transform: uppercase;
-}
-
-.button:hover {
-  padding: 7px 24px;
-  font-size: 12px;
-}
 
 .button-article {
   background-color: var(--color-dark);
@@ -282,6 +268,24 @@ h2 {
   text-transform: uppercase;
 }
 
+.button {
+  background-color: var(--color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 6px 23px;
+  color: var(--bachground-color-light);
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--bachground-color-light);
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+
+/* Line - category color in Today’s recipes*/
 .todays_recipes_categoty_block[data-category='seafood'] {
   border-left: 1px solid var(--category-seafood);
   padding: 0 0 0 10px;
@@ -642,4 +646,54 @@ h2 {
   width: 24px;
   height: 24px;
   display: block;
+}
+
+/* RECIPE-PAGE */
+
+/* 1st screen */
+
+
+.recipe-title {
+  width: var(--width-12col);
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.recipe-title-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-title-text {
+  font-size: 12px;
+  font-family: Inter, sans-serif;
+  margin-top: 200px;
+}
+
+.recipe-title-text h1 {
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 15px 0 0 0;
+}
+
+.recipe-title-text h1 span {
+  font-size: 37px;
+  font-weight: 800;
+}
+
+.recipe-title-text p {
+font-size: 12px;
+color: var(--primary-color);
+}
+
+.recipe-main-foto {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 180px;
 }
