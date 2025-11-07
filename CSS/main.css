@@ -652,17 +652,28 @@ h2 {
 
 /* 1st screen */
 
-
-.recipe-title {
+.recipe-first-screen {
   width: var(--width-12col);
   display: flex;
   justify-content: space-between;
   height: fit-content;
-  gap: 40px;
+  gap: var(--grid-gap);
   margin: 0 auto;
 }
 
-.recipe-title-container {
+.recipe-first-screen-foto {
+  width: 50%;
+  margin: 180px 0 0 0;
+  height: 100%;
+}
+
+.recipe-first-screen-foto img {
+  height: 100%;
+  display: block;
+  justify-self: end;
+}
+
+.recipe-first-screen-left {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -672,6 +683,7 @@ h2 {
   font-size: 12px;
   font-family: Inter, sans-serif;
   margin-top: 200px;
+  margin-bottom: 67px;
 }
 
 .recipe-title-text h1 {
@@ -687,13 +699,69 @@ h2 {
 }
 
 .recipe-title-text p {
-font-size: 12px;
-color: var(--primary-color);
+  font-size: 12px;
+  color: var(--primary-color);
 }
 
-.recipe-main-foto {
-  width: 50%;
+/* internals */
+
+.recipe-internals {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 180px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.recipe-internals-item {
+  display: flex;
+  align-items: center;
+  gap: var(--grid-gap);
+  margin-bottom: 55px;
+}
+
+/* Ingredients */
+.recipe-ingredients {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 25px;
+}
+
+.recipe-ingredients h3 {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--bachground-color-light);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.recipe-ingredients ul {
+list-style: unset;
+color: var(--bachground-color-light);
+list-style-position: outside; 
+/* точки за пределами блока, по умолчанию */
+font-size: 14px;
+line-height: 24px;
+columns: 2;
+column-gap: var(--grid-gap);
+padding-left: 13px;
+}
+
+.recipe-ingredients li {
+  break-inside: avoid;
+/* предотвращает разрыв элемента между колонками */
+padding: 0 30px 0 0;
+}
+
+
+/* Button */
+
+.recipe-ingredients-buttons {
+  display: flex;
+}
+
+.recipe-ingredients-btn img {
+  fill: var(--color-dark);
+  stroke: #111;
 }
