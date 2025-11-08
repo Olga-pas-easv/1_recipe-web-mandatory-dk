@@ -884,3 +884,150 @@ h2 {
   line-height: 24px;
   color: var(--bachground-color-light);
 }
+
+/* SEARCH PAGE */
+
+.search-box-section {
+  width: var(--width-12col);
+  margin: 0 auto;
+  min-height: 390px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+  border-bottom: 1px solid var(--color-dark);
+  padding: 120px 0 52px 0;
+}
+
+.search-search-box {
+  grid-column: 1 / span 4;
+  position: relative;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  padding-top: 25px;
+}
+
+.search-search-box h1 {
+  color: var(--color-white);
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.search-search-box-block {
+  width: 100%;
+}
+
+.search-mag-glass {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  color: var(--bachground-color-light);
+  left: 10px;
+  transform: translateY(40%);
+}
+
+.search-search-input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--bachground-color-light);
+  border-radius: 5px;
+  padding: 10px 20px 10px 40px;
+  outline: none;
+  color: var(--bachground-color-light);
+  margin: 0 0 10px 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-search-input::placeholder {
+  color: var(--bachground-color-light);
+}
+
+.search-search-box p {
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+}
+
+/* Checkbox - search page*/
+
+.search-category-checkbox {
+  padding: 24px 19px;
+  grid-column: 6 / span 6;
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+  border-radius: 5px;
+  background: linear-gradient(90deg, #ededed18 0%, #ededed07 40%, #111 100%);
+}
+
+.search-category-checkbox h3 {
+  color: var(--color-white);
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+
+.search-category-checkbox-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 13px;
+  width: 100%;
+}
+
+.search-category-checkbox-box label {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: calc(50% - 20px);
+}
+
+.search-category-checkbox-box input[type='radio'] {
+  margin: 0 10px 0 0;
+  height: 22px;
+  width: 22px;
+}
+
+.search-category-checkbox-box input[type='radio'] {
+  accent-color: var(--primary-color);
+}
+
+.search-category-checkbox-box input[type='radio']#chicken {
+  accent-color: var(--category-chicken);
+}
+
+.search-category-checkbox-box input[type='radio']#dessert {
+  accent-color: var(--category-dessert);
+}
+
+.search-category-checkbox-box input[type='radio']#meats {
+  accent-color: var(--category-meats);
+}
+
+.search-category-checkbox-box input[type='radio']#seafood {
+  accent-color: var(--category-seafood);
+}
+
+.search-category-checkbox-box input[type='radio']#misc {
+  accent-color: var(--category-misc);
+}
+
+.search-category-checkbox-box input[type='radio']#paste {
+  accent-color: var(--category-paste);
+}
+
+.search-category-checkbox-box input[type='radio']#veg {
+  accent-color: var(--category-veg);
+}
+
+/* Search results */
+
+.search-results {
+  width: var(--width-12col);
+  margin: 0;
+
+}
+
+.search-results h2 {
+    display: none;
+}
+
