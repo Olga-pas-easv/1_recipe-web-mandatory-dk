@@ -1023,11 +1023,87 @@ h2 {
 
 .search-results {
   width: var(--width-12col);
-  margin: 0;
-
+  margin: 0 auto auto 200px;
 }
 
-.search-results h2 {
-    display: none;
+.search-results H2 {
+  display: none;
 }
 
+.search-results article {
+  padding: 56px 94px;
+  border-bottom: 1px solid var(--color-dark);
+}
+
+.search-results article h3 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.search-results-category {
+  font-weight: 700;
+  margin-bottom: 11px;
+  padding-left: 10px;
+  line-height: 14px;
+}
+
+/* Category color in search result*/
+.search-results-category span[data-category='seafood'] {
+  color: var(--category-seafood);
+}
+
+.search-results-category span[data-category='chicken'] {
+  color: var(--category-chicken);
+}
+
+.search-results-category span[data-category='dessert'] {
+  color: var(--category-dessert);
+}
+
+.search-results-category span[data-category='meats'] {
+  color: var(--category-meats);
+}
+
+.search-results-category span[data-category='veg'] {
+  color: var(--category-veg);
+}
+
+.search-results-category span[data-category='paste'] {
+  color: var(--category-paste);
+}
+
+.search-results-category span[data-category='misc'] {
+  color: var(--category-misc);
+}
+
+/* BORDER */
+
+.search-results-category[data-category='seafood'] {
+  border-left: 3px solid var(--category-seafood);
+}
+
+.search-results-category[data-category='chicken'] {
+  border-left: 3px solid var(--category-chicken);
+}
+
+.search-results-category span[data-category='dessert'] {
+  border-left: 3px solid var(--category-dessert);
+}
+
+.search-results-category span[data-category='meats'] {
+  border-left: 3px solid var(--category-meats);
+}
+
+.search-results-category span[data-category='veg'] {
+  border-left: 3px solid var(--category-veg);
+}
+
+.search-results-category span[data-category='paste'] {
+  border-left: 3px solid var(--category-paste);
+}
+
+.search-results-category span[data-category='misc'] {
+  border-left: 3px solid var(--category-misc);
+}
