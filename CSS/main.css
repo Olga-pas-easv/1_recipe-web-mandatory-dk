@@ -1193,3 +1193,102 @@ h2 {
 .category-hero-container a {
   text-decoration: none;
 }
+
+/* Tips & Guides */
+
+.category-tips-section {
+  width: var(--width-12col);
+  margin: 0 auto;
+}
+.category-tips-container {
+  grid-template-rows: auto 140px;
+  padding-top: 37px;
+  display: grid;
+  gap: var(--grid-gap);
+  justify-content: space-between;
+}
+
+.category-tips-article {
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.category-tips-article article {
+  width: calc((100% / 3) - 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-tips-article img {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.category-tips-text {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-tips-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.category-tips-text p {
+  margin-bottom: 34px;
+}
+
+.category-tips-article-button {
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  color: var(--bachground-color-light);
+  text-align: center;
+  padding: 8px 14px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  align-self: end;
+}
+
+.category-tips-article-button:hover {
+  background-color: var(--bachground-color-light);
+  color: var(--color-dark);
+}
+
+.category-tips-button-bottom-block {
+  width: 100%;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+padding-top: 31px;
+}
+
+.category-tips-button-bottom {
+  height: fit-content;
+  background-color: var(--color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  color: var(--bachground-color-light);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 47px;
+  text-decoration: none;
+}
+
+.category-tips-button-bottom:hover {
+  background-color: var(--bachground-color-light);
+  color: var(--color-dark);
+}
