@@ -764,6 +764,18 @@ h2 {
   gap: var(--grid-gap);
 }
 
+.recipe-ingredients-btn {
+  background-color: transparent;
+  border: none;
+  transition: transform 0.2s ease;
+  /* создание анимации */
+}
+
+.recipe-ingredients-btn:hover {
+  transform: scale(1.07);
+  /* увеличивается на 7% */
+}
+
 /* INSTRUCTIONS SECTION */
 
 .instructions {
@@ -1201,7 +1213,7 @@ h2 {
   margin: 0 auto;
 }
 .category-tips-container {
-  grid-template-rows: auto 140px;
+  grid-template-rows: auto auto;
   padding-top: 37px;
   display: grid;
   gap: var(--grid-gap);
@@ -1273,7 +1285,7 @@ h2 {
   grid-row: 2;
   display: flex;
   justify-content: center;
-padding-top: 31px;
+  padding-top: 31px;
 }
 
 .category-tips-button-bottom {
@@ -1292,3 +1304,108 @@ padding-top: 31px;
   background-color: var(--bachground-color-light);
   color: var(--color-dark);
 }
+
+/*  top desserts */
+.top-desserts {
+  width: var(--width-12col);
+  margin: 0 auto;
+  height: fit-content;
+}
+
+.top-desserts-container-block {
+  display: flex;
+  margin-top: 28px;
+  gap: var(--grid-gap);
+  flex-wrap: wrap;
+}
+
+.top-desserts-listing {
+  display: grid;
+  background-color: var(--bachground-color-light);
+  grid-template-rows: auto 1fr;
+  color: var(--color-dark);
+  border-radius: 5px;
+  width: calc((100% / 4) - 10px);
+}
+
+.top-desserts-listing-img img {
+  border-radius: 5px 5px 0 0;
+  height: 170px;
+  width: 100%;
+  background-size: auto;
+  background-position: center;
+}
+
+.top-desserts-listing-text {
+  padding: 22px 23px 24px 39px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-desserts-listing-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.top-desserts-listing-text p {
+  text-transform: capitalize;
+  margin-bottom: 27px;
+  font-size: 16px;
+}
+
+.top-desserts-listing-text-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.top-desserts-property {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: capitalize;
+  flex-grow: 1;
+}
+
+.top-desserts-property-row {
+  display: flex;
+  gap: var(--grid-gap);
+  flex-wrap: nowrap;
+  /* align-items: center; */
+  margin-bottom: var(--grid-gap);
+}
+
+.top-desserts-property-row p {
+  margin-bottom: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.top-desserts-property-row img {
+  display: flex;
+  align-items: center;
+}
+
+.top-desserts-listing-text-last {
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
+  display: flex;
+}
+
+/* 
+
+
+@media (width < 200px) :root {
+  --width-12col: 100%;
+}
+.todays_recipes-container-block {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.all_star_showdown {
+  display: none;
+} */
