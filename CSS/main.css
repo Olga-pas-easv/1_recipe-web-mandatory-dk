@@ -1136,21 +1136,19 @@ h2 {
 
 .category-hero-section {
   width: var(--width-full);
+  background-image: url('https://picsum.photos/1200/500');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   /* border-bottom: 1px solid var(--color-dark); */
   min-height: 500px;
   display: flex;
   justify-content: center;
 }
 
-.category-hero-containers {
-}
-
 .category-hero-container {
   width: var(--width-12col);
-  background-image: url('https://picsum.photos/1200/500');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+
   margin: 0, auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -1396,9 +1394,75 @@ h2 {
   display: flex;
 }
 
+/* subscribe */
+
+.subscribe {
+  width: var(--width-12col);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bachground-color-light);
+  border-radius: 5px;
+  margin: 73px auto 0 auto;
+  padding: 55px 80px;
+}
+
+.subscribe-text {
+  width: 50%;
+  align-items: center;
+}
+
+.subscribe-text h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-style: 22px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.subscribe-text p {
+  color: var(--color-dark);
+}
+
+.subscribe-mail-form {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-left: 120px;
+}
+
+.subscribe-input {
+  background-color: transparent;
+  border: 1px solid var(--bachground-color-light);
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: var(--color-grey);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  min-width: 220px;
+}
+
+.subscribe-input::placeholder {
+  color:var(--color-grey);}
+
+
+
+         /* < !-- SEO text or answers --> */
+
+.seo-text{
+  margin: 0 auto;
+  width: var(--width-12col);
+  padding-bottom: 75px;
+  line-height: 2;
+}
+
+.seo-text-p{
+  padding-top: 30px;
+}
+
+
 /* 
-
-
 @media (width < 200px) :root {
   --width-12col: 100%;
 }
@@ -1408,4 +1472,4 @@ h2 {
 
 .all_star_showdown {
   display: none;
-} */
+} */ */
