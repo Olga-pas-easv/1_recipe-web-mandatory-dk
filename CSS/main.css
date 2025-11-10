@@ -1198,6 +1198,8 @@ h2 {
 
 .category-hero-button:hover {
   font-size: 17px;
+  background-color: var(--bachground-color-light);
+  color: var(--color-dark);
 }
 
 .category-hero-container a {
@@ -1231,6 +1233,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.25);
+        background-color:var(--bachground-color-light);
 }
 
 .category-tips-article img {
@@ -1241,7 +1246,7 @@ h2 {
 }
 
 .category-tips-text {
-  padding-left: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -1251,10 +1256,12 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 26px;
+  color: var(--primary-color);
 }
 
 .category-tips-text p {
   margin-bottom: 34px;
+  color: var(--color-dark);
 }
 
 .category-tips-article-button {
@@ -1276,6 +1283,7 @@ h2 {
 .category-tips-article-button:hover {
   background-color: var(--bachground-color-light);
   color: var(--color-dark);
+  border: 1px solid var(--color-dark);
 }
 
 .category-tips-button-bottom-block {
@@ -1362,7 +1370,6 @@ h2 {
 .top-desserts-property {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-transform: capitalize;
   flex-grow: 1;
 }
@@ -1371,8 +1378,7 @@ h2 {
   display: flex;
   gap: var(--grid-gap);
   flex-wrap: nowrap;
-  /* align-items: center; */
-  margin-bottom: var(--grid-gap);
+  margin-bottom: 4px;
 }
 
 .top-desserts-property-row p {
@@ -1396,20 +1402,20 @@ h2 {
 
 /* subscribe */
 
-.subscribe{
+.subscribe {
   width: var(--width-full);
   min-height: 400px;
-    background-image: url('https://picsum.photos/1200/400');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-        margin-top: 73px
+  background-image: url('https://picsum.photos/1200/400');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 73px;
 }
 
-.subscribe-block{
+.subscribe-block {
   width: var(--width-12col);
   display: flex;
   justify-content: space-between;
@@ -1457,22 +1463,21 @@ h2 {
 }
 
 .subscribe-input::placeholder {
-  color:var(--color-grey);}
+  color: var(--color-grey);
+}
 
+/* < !-- SEO text or answers --> */
 
-         /* < !-- SEO text or answers --> */
-
-.seo-text{
+.seo-text {
   margin: 0 auto;
   width: var(--width-12col);
   padding-bottom: 75px;
   line-height: 2;
 }
 
-.seo-text-p{
+.seo-text-p {
   padding-top: 30px;
 }
-
 
 /* 
 @media (width < 200px) :root {
@@ -1484,4 +1489,4 @@ h2 {
 
 .all_star_showdown {
   display: none;
-} */ 
+} */
