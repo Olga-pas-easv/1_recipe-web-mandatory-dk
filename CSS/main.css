@@ -1233,7 +1233,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
         box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.25);
         background-color:var(--bachground-color-light);
 }
@@ -1243,6 +1243,7 @@ h2 {
   height: 100%;
   background-size: cover;
   background-position: center;
+  border-radius: 5px 0 0 5px;
 }
 
 .category-tips-text {
@@ -1478,9 +1479,10 @@ h2 {
 .seo-text-p {
   padding-top: 30px;
 }
-
 /* 
-@media (width < 200px) :root {
+ 
+@media (width < 200px) { 
+   :root {
   --width-12col: 100%;
 }
 .todays_recipes-container-block {
@@ -1489,4 +1491,5 @@ h2 {
 
 .all_star_showdown {
   display: none;
+} 
 } */
