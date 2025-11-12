@@ -1425,6 +1425,7 @@ h2 {
   border-radius: 5px;
   margin: 0 auto;
   padding: 55px 130px;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.25);
 }
 
 .subscribe-text {
