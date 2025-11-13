@@ -35,11 +35,11 @@
 
   .todays_recipes-listing-img {
     display: flex;
-    height: 250px;
+    height: fit-content;
   }
 
   .todays_recipes-listing-img img {
-    height: 100%;
+    height: fit-content;
   }
 
   .todays_recipes-listing-text {
@@ -57,7 +57,7 @@
   }
 
   .todays_recipes_categoty {
-    font-style: 20px;
+    font-size: 16px;
   }
 
   .button {
@@ -172,12 +172,15 @@
   .top-desserts-listing:nth-child(8) {
     display: none;
   }
- 
+
+    .top-desserts-listing-img {
+    height: fit-content;
+    }
 
   .top-desserts-listing-img img {
-
     background-size: cover;
-        background-position: center center;
+    background-position: center center;
+    height: fit-content;
   }
 
   .subscribe-block {
@@ -217,53 +220,47 @@
     display: none;
   }
 
+  /* recipe page */
 
-/* recipe page */
-
-.recipe-first-screen-foto {
+  .recipe-first-screen-foto {
     display: none;
-}
+  }
 
-.recipe-first-screen-left {
+  .recipe-first-screen-left {
     width: 100%;
-}
+  }
 
-.bonus {
+  .bonus {
     display: none;
-}
+  }
 
+  /* search page */
 
-/* search page */
-
-.search-box-section {
+  .search-box-section {
     display: flex;
     flex-direction: column-reverse;
-}
+  }
 
-.search-search-box {
+  .search-search-box {
     padding: 0 20px;
     margin-top: 25px;
-}
+  }
 
-.search-mag-glass {
+  .search-mag-glass {
     left: 26px;
-}
+  }
 
-.search-results {
-   width: 100%;
-   margin-left: 0;
-   margin-bottom: 100px;
-   padding: 0;
-}
+  .search-results {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 100px;
+    padding: 0;
+  }
 
-.search-results article {
+  .search-results article {
     width: 100%;
     margin: 0;
     padding-left: 20px;
-padding-right: 20px;
+    padding-right: 20px;
+  }
 }
-
-
-}
-
-
