@@ -514,6 +514,9 @@ h2 {
 .in_the_kitchen-media {
   width: 50%;
   position: relative;
+    background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
 }
 
 .in_the_kitchen h3 {
@@ -673,6 +676,9 @@ h2 {
   height: 100%;
   display: block;
   justify-self: end;
+    background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
 }
 
 .recipe-first-screen-left {
@@ -1339,8 +1345,9 @@ h2 {
   border-radius: 5px 5px 0 0;
   height: 170px;
   width: 100%;
-  background-size: auto;
-  background-position: center;
+    background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
 }
 
 .top-desserts-listing-text {
@@ -1392,6 +1399,7 @@ h2 {
 .top-desserts-property-row img {
   display: flex;
   align-items: center;
+
 }
 
 .top-desserts-listing-text-last {
@@ -1480,17 +1488,4 @@ h2 {
 .seo-text-p {
   padding-top: 30px;
 }
-/* 
- 
-@media (width < 200px) { 
-   :root {
-  --width-12col: 100%;
-}
-.todays_recipes-container-block {
-  grid-template-columns: repeat(1, 1fr);
-}
 
-.all_star_showdown {
-  display: none;
-} 
-} */

@@ -1,0 +1,269 @@
+@media (width < 701px) {
+  :root {
+    --width-12col: 100%;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+  }
+
+  .hero-text {
+    margin-bottom: 100px;
+    padding-left: 20px;
+  }
+
+  .hero-search-box {
+    padding-left: 20px;
+  }
+
+  .mag-glass {
+    left: 22px;
+  }
+
+  .todays_recipes-container-block {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .todays_recipes-listing {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .todays_recipes-listing-img {
+    display: flex;
+    height: 250px;
+  }
+
+  .todays_recipes-listing-img img {
+    height: 100%;
+  }
+
+  .todays_recipes-listing-text {
+    justify-content: space-between;
+  }
+
+  .todays_recipes-listing-text h3 {
+    font-size: 27px;
+    margin-bottom: 22px;
+  }
+
+  .todays_recipes-listing-text p {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+
+  .todays_recipes_categoty {
+    font-style: 20px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .all_star_showdown {
+    display: none;
+  }
+
+  .category_selection ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .footer-container-right {
+    display: none;
+  }
+
+  .in_the_kitchen {
+    margin-bottom: 100px;
+    grid-template-rows: auto auto;
+  }
+
+  .in_the_kitchen article {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .in_the_kitchen article:nth-child(2) {
+    display: none;
+  }
+
+  .in_the_kitchen-media {
+    width: 100%;
+  }
+
+  .in_the_kitchen-text {
+    width: 100%;
+    padding: 60px;
+  }
+
+  .in_the_kitchen a {
+    margin-top: 15px;
+  }
+
+  .in_the_kitchen a {
+    font-size: 22px;
+  }
+
+  .in_the_kitchen h3 {
+    font-size: 30px;
+  }
+
+  .in_the_kitchen h4 {
+    font-size: 16px;
+  }
+
+  H2 {
+    font-size: 30px;
+  }
+
+  .footer-container-left {
+    border: none;
+    flex-grow: 1;
+    padding: 30px;
+  }
+
+  /* Category page */
+
+  .category-hero-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+  }
+
+  .category-hero-button {
+    font-size: 22px;
+    align-self: center;
+    padding: 10px 30px;
+  }
+
+  .category-tips-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .category-tips-article article {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .category-tips-article article:last-child {
+    display: none;
+  }
+  .category-tips-article article:first-child {
+    flex-direction: row-reverse;
+  }
+
+  .top-desserts-listing {
+    width: 100%;
+  }
+
+  .top-desserts-listing:nth-child(1),
+  .top-desserts-listing:nth-child(2),
+  .top-desserts-listing:nth-child(3),
+  .top-desserts-listing:nth-child(4),
+  .top-desserts-listing:nth-child(8) {
+    display: none;
+  }
+ 
+
+  .top-desserts-listing-img img {
+
+    background-size: cover;
+        background-position: center center;
+  }
+
+  .subscribe-block {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .subscribe-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-mail-form {
+    width: 100%;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .subscribe-input {
+    min-width: 170px;
+  }
+
+  .seo-text-p {
+    padding: 0 20px;
+  }
+
+  .category-tips-article-button {
+    font-size: 20px;
+  }
+
+  .category-tips-button-bottom {
+    font-size: 20px;
+  }
+
+  .seo-text-p:nth-child(3),
+  .seo-text-p:nth-child(4) {
+    display: none;
+  }
+
+
+/* recipe page */
+
+.recipe-first-screen-foto {
+    display: none;
+}
+
+.recipe-first-screen-left {
+    width: 100%;
+}
+
+.bonus {
+    display: none;
+}
+
+
+/* search page */
+
+.search-box-section {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.search-search-box {
+    padding: 0 20px;
+    margin-top: 25px;
+}
+
+.search-mag-glass {
+    left: 26px;
+}
+
+.search-results {
+   width: 100%;
+   margin-left: 0;
+   margin-bottom: 100px;
+   padding: 0;
+}
+
+.search-results article {
+    width: 100%;
+    margin: 0;
+    padding-left: 20px;
+padding-right: 20px;
+}
+
+
+}
+
+
